@@ -107,13 +107,15 @@ align-items: center;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--color-main-text);
+    color: var(--color-main-text); 
+    transition: color var(--transform-hover-focus);
 }
 
 .menu-item-address{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-second-text);
+    transition: color var(--transform-hover-focus);
 }
 
 .menu-item-link:hover,
@@ -121,7 +123,7 @@ align-items: center;
 .menu-item-address:hover,
 .menu-item-address:focus
 {
-    color: var(--color-hover);
+    color: var(--color-hover);    
 }
 
 .address-main {    
@@ -207,6 +209,7 @@ align-items: center;
     margin: 0 auto;
     display: block;
     border:none;
+    transition: background-color var(--transform-hover-focus), box-shadow var(--transform-hover-focus);
 }
 
 .hero-button:hover,
@@ -370,6 +373,7 @@ height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color var(--transform-hover-focus);
 }
 
 .social-link-team:hover,
@@ -379,6 +383,7 @@ height: 40px;
 
 .social-list-icon {
     fill: var(--color-footer-fon);    
+    transition: fill var(--transform-hover-focus);
 }
 
 .social-link-team:hover .social-list-icon,
@@ -418,7 +423,7 @@ height: 40px;
 
 .customers-icon {
     fill:#8E8F99;
-    
+    transition: fill var(--transform-hover-focus);    
 }
 
 .customers-link{
@@ -429,6 +434,7 @@ height: 40px;
     height: 100%;
     border: 1px solid #8E8F99;
     border-radius: 4px;
+    transition: border-color var(--transform-hover-focus);
 }
 
 .customers-link:hover, .customers-link:focus{
@@ -475,6 +481,9 @@ border-color: var(--color-hover);
     font-family: var(--primary-font);
     letter-spacing: 0.04em;
     padding: 12px 24px;
+    transition: color var(--transform-hover-focus),
+    background-color var(--transform-hover-focus),
+    box-shadow var(--transform-hover-focus);
 }
 
 .projects-menu {
@@ -526,23 +535,24 @@ border-color: var(--color-hover);
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-second-text);
-    
+    transition: color var(--transform-hover-focus);    
 }
 
 .projects-text-button:hover,
 .projects-text-button:focus{
-color: var(--color-fon-text-button);
+    color: var(--color-fon-text-button);
 }
 
 .projects-button:hover,
 .projects-button:focus {
-background-color: var(--color-hover);
-color: var(--color-fon-text-button);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: var(--color-hover);
+    color: var(--color-fon-text-button);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .project-link {
     display: block;
+    transition: box-shadow var(--transform-hover-focus);
     }
 
 .project-link:hover,
@@ -622,6 +632,7 @@ color: var(--background-color);
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color var(--transform-hover-focus);
 }
 
 .social-footer-link:hover,
@@ -631,6 +642,7 @@ color: var(--background-color);
 
 .social-list-icon {
     fill: var(--color-footer-fon);
+    transition: fill var(--transform-hover-focus);
 }
 
 .social-footer-link:hover .social-list-icon,
