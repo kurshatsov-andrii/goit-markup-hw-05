@@ -155,6 +155,7 @@ align-items: center;
 
 .current{
     position: relative;
+    color: var(--color-hover);
 }
 
 .current::after{
@@ -516,6 +517,7 @@ border-color: var(--color-hover);
     padding-right: 32px;
     transform: translateY(100%);
     overflow: auto;
+    transition: transform var(--transform-hover-focus);
 }
 
 .projects-img {    
@@ -563,8 +565,7 @@ border-color: var(--color-hover);
 
 .project-link:hover .projects-cover-text,
 .project-link:focus .projects-cover-text{
-    transform: translate(0);
-    transition: transform var(--transform-hover-focus);
+    transform: translate(0);    
 }
 
 .projects-wrap {
